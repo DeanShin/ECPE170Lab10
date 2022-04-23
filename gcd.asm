@@ -151,8 +151,8 @@ main:
         # t0 = gcd(n1, n2)
         move $a0, $s0       # n1 = n1
         move $a1, $s1       # n2 = n2
-        jal gcd
-        move $t0, $v0
+        jal gcd             # call gcd function
+        move $t0, $v0       # t0 = gcd(n1, n2)
 
         # Print "\n G.C.D of "
         la $a0, msg1	# Load msg1 for print
